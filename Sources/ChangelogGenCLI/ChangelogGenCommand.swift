@@ -4,6 +4,8 @@ public struct ChangelogGenCommand: ParsableCommand {
     public static var configuration: CommandConfiguration = CommandConfiguration(
         commandName: "changeloggen",
         abstract: "A changelog generator.",
+        version: "0.0.1",
+        shouldDisplay: true,
         subcommands: [GenerateCommand.self],
         defaultSubcommand: GenerateCommand.self)
     

@@ -6,4 +6,4 @@ generate:
 build-debug:
 	@swift build
 
-.PHONY: generate build-debug run
+.PHONY: generate build-debug

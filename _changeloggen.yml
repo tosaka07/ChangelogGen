@@ -1,0 +1,7 @@
+target: 'cam-inc/fensi-ios'
+labels:
+  label:
+    - 'Type: Added'
+    - 'Type: Fixed'
+    - 'Type: Changed'
+  prefix: 'Type: '
