@@ -1,7 +1,7 @@
 PRODUCT_NAME = ChangelogGen
 EXECUTABLE_NAME = changeloggen
 
-PREFIX = /usr/local
+PREFIX? = /usr/local
 INSTALL_PATH = $(PREFIX)/bin/$(EXECUTABLE_NAME)
 
 .PHONY: generate build-debug build install
