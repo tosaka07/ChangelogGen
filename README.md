@@ -3,7 +3,7 @@
 ChangelogGen is a command line tool written in Swift that generates changelog.
 
 ```sh
-$ changeloggen generate --token '...' --m '1.2.0' -t 'tosaka07/changeloggen'
+$ changeloggen generate --token '...' -m '1.2.0' -t 'tosaka07/changeloggen'
 ```
 
 ## Installation
@@ -64,7 +64,7 @@ $ make generate
 $ open ChangelogGen.xcodeproj
 ```
 
-**build**
+**Local build**
 
 ```
 $ make build-debug
