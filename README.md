@@ -8,6 +8,12 @@ $ changeloggen generate --token '...' -m '1.2.0' -t 'tosaka07/changeloggen'
 
 ## Installation
 
+### Homebrew
+
+```sh
+$ brew install tosaka07/tap/changeloggen
+```
+
 ### Mint
 
 ```sh
