@@ -1,6 +1,6 @@
 # ChangelogGen
 
-ChangelogGen is a command line tool written in Swift that generates changelog.
+ChangelogGen is a command-line tool that generates changelog from milestone.
 
 ```sh
 $ changeloggen generate --token '...' -m '1.2.0' -t 'tosaka07/changeloggen'
@@ -18,6 +18,13 @@ $ brew install tosaka07/tap/changeloggen
 
 ```sh
 $ mint install tosaka07/ChangelogGen
+```
+
+### Manual
+
+```sh
+$ git clone https://github.com/tosaka07/ChangelogGen.git
+$ make install
 ```
 
 ## Usage
@@ -74,5 +81,15 @@ $ open ChangelogGen.xcodeproj
 
 ```
 $ make build-debug
-$ ./build/debug/changeloggen generate --access-token ""
+$ ./build/debug/changeloggen ...
 ```
+
+**Release build**
+
+```sh
+$ make build
+```
+
+## License
+
+MIT
