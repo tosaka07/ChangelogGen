@@ -104,14 +104,14 @@ struct GenerateCommand: ParsableCommand {
         }
 
         guard let target = spec.formattedTarget else {
-            throw ValidationError("Please specify a target with this format `owner/repo`.")
+            throw ValidationError("Missing expected argument '--target <owner/repo>' or configuration file.")
         }
 
         let api = GitHubAPI(config: .init(token: token))
         let milestones = try api.milestones(owner: target.owner, repo: target.repo).get()
 
         guard let specificMilestone = milestones.first(where: { $0.title == milestone }) else {
-            throw ValidationError("Please specify a milestones that exist. Not found a milestone with title '\(milestone)'.")
+            throw ValidationError("Not found a milestone with title '\(milestone)'.")
         }
 
         let issues = try api.issues(owner: target.owner, repo: target.repo, state: .all, milestone: specificMilestone.number).get()
