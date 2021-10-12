@@ -10,10 +10,10 @@ let package = Package(
         .executable(name: "changeloggen", targets: ["ChangelogGen"])
     ],
     dependencies: [
-        .package(url: "https://github.com/kylef/PathKit.git", from: "1.0.0"),
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.2"),
-        .package(url: "https://github.com/jpsim/Yams.git", from: "4.0.4"),
-        .package(url: "https://github.com/onevcat/Rainbow.git", from: "3.2.0"),
+        .package(url: "https://github.com/kylef/PathKit", from: "1.0.1"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.1"),
+        .package(url: "https://github.com/jpsim/Yams", from: "4.0.6"),
+        .package(url: "https://github.com/onevcat/Rainbow", from: "4.0.1"),
     ],
     targets: [
         .target(
