@@ -30,5 +30,5 @@ struct Issue: Codable {
     var updatedAt: Date?
     var closedAt: Date?
     var authorAssociation: String
-    var body: String
+    var body: String?
 }
